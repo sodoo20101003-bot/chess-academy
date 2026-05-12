@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#050506"/>
+
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <ellipse cx="600" cy="315" rx="500" ry="300" fill="url(#glow)"/>
+
+  <!-- Decorative chess pieces -->
+  <text x="100" y="200" font-family="Georgia, serif" font-size="120" fill="rgba(255,255,255,0.04)">♞</text>
+  <text x="1000" y="500" font-family="Georgia, serif" font-size="140" fill="rgba(245,217,122,0.06)">♛</text>
+
+  <!-- Logo icon -->
+  <g transform="translate(540, 130)">
+    <path d="M60 12 C75 12 90 27 90 42 L90 54 L108 63 L108 144 L12 144 L12 120 L30 114 L24 96 L36 75 L48 75 L48 57 C48 51 48 45 48 39 L60 12 Z"
+          stroke="#34d399" stroke-width="3" stroke-linejoin="round" fill="none"/>
+    <circle cx="69" cy="39" r="2.5" fill="#34d399"/>
+  </g>
+
+  <!-- Brand name -->
+  <text x="600" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="84" font-weight="500" fill="#ffffff" letter-spacing="2">
+    GrandMaster<tspan font-style="italic" fill="#34d399">.mn</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="425" text-anchor="middle" font-family="-apple-system, system-ui, sans-serif" font-size="26" fill="rgba(255,255,255,0.6)" letter-spacing="1">
+    Шатрын мастер болох замналд
+  </text>
+
+  <!-- Bottom subtle line -->
+  <line x1="500" y1="490" x2="700" y2="490" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <!-- URL -->
+  <text x="600" y="540" text-anchor="middle" font-family="-apple-system, system-ui, sans-serif" font-size="18" fill="rgba(52,211,153,0.7)" letter-spacing="3">
+    GRANDMASTER.MN
+  </text>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "name": "GrandMaster.mn — Шатрын онлайн академи",
+  "short_name": "GrandMaster",
+  "description": "Монголын дэвшилтэт онлайн шатрын академи. Интерактив хичээл, гросмастер багш нар, өөрийн хурдаар суралцах.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050506",
+  "theme_color": "#050506",
+  "lang": "mn",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
