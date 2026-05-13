@@ -12,7 +12,7 @@ import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { Button } from '@/components/ui/Button'
 import type { Exercise } from '@/components/chess/ExerciseWidget'
-import { getEffectiveTier, canAccessLesson, type PlanTier, type CourseLevel, LEVEL_LABEL_MN } from '@/lib/plan-access'
+import { getEffectiveTier, canAccessLesson, type PlanTier, type CourseLevel, TIER_LABEL_MN } from '@/lib/plan-access'
 
 interface PageProps {
   params: Promise<{ id: string }>
@@ -60,7 +60,7 @@ export default async function LessonPage({ params }: PageProps) {
             <Lock className="h-12 w-12 text-gold-400 mx-auto mb-6" />
             <h1 className="font-display text-3xl mb-3 text-white">Премиум контент</h1>
             <p className="text-white/60 mb-8">
-              Энэ хичээл нь <span className="text-gold-400 font-medium">{LEVEL_LABEL_MN[lessonLevel]}</span> түвшний бөгөөд{' '}
+              Энэ хичээл нь <span className="text-gold-400 font-medium">{TIER_LABEL_MN[lessonLevel]}</span> түвшний бөгөөд{' '}
               {lessonLevel === 'intermediate' && (
                 <span className="text-emerald-400 font-medium">Basic</span>
               )}

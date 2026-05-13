@@ -2,7 +2,7 @@
 
 import { Download, FileText, Image as ImageIcon, File, Lock } from 'lucide-react';
 import Link from 'next/link';
-import { canDownloadLesson, type PlanTier } from '@/lib/plan-access';
+import { canAccessLesson, type PlanTier } from '@/lib/plan-access';
 import { createClient } from '@/lib/supabase/client';
 import { toast } from 'sonner';
 
@@ -40,7 +40,7 @@ export function LessonAttachments({
   userTier,
   attachments,
 }: LessonAttachmentsProps) {
-  const canDownload = canDownloadLesson(userTier);
+  const canDownload = canAccessLesson(userTier);
   const supabase = createClient();
 
   if (!attachments || attachments.length === 0) return null;

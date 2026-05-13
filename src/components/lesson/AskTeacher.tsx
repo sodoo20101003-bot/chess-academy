@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageSquare, Send, CheckCircle2, Clock, Lock } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
-import { canAskTeacher, type PlanTier } from '@/lib/plan-access';
+import { canBookTeacher, type PlanTier } from '@/lib/plan-access';
 import Link from 'next/link';
 import { toast } from 'sonner';
 
@@ -29,7 +29,7 @@ export function AskTeacher({ lessonId, userId, userTier }: AskTeacherProps) {
   const [submitting, setSubmitting] = useState(false);
   const supabase = createClient();
 
-  const canAsk = canAskTeacher(userTier);
+  const canAsk = canBookTeacher(userTier);
 
   useEffect(() => {
     if (!canAsk) return;
