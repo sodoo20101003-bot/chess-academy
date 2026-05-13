@@ -60,7 +60,7 @@ export function AccountClient({ user, profile, payments, plans }: Props) {
 
   const tier = (profile?.subscription_tier || 'free') as keyof typeof TIER_LABEL_MN;
   const expiresAt = profile?.subscription_expires_at;
-  const hasActivePlan = tier !== 'free' && expiresAt && new Date(expiresAt) > new Date();
+const hasActivePlan = (tier as string) !== 'free' && expiresAt && new Date(expiresAt) > new Date();
 
   function handleAvatarChange(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
